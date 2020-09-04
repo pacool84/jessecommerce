@@ -1,9 +1,14 @@
 import React from "react";
+import "./styles/home.css";
 
 function Home() {
   return (
-    <div>
-      <h1>Hello my friend Home Page</h1>
+    <div className="home">
+      <img
+        className="home__image"
+        src="https://www.todotaladros.com/img/cms/Blog/Amazon%20fraudes/Banner-Amazon-fraudes-blog.jpg"
+        alt="Banner"
+      />
     </div>
   );
 }
