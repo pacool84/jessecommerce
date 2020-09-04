@@ -40,7 +40,7 @@ function Header() {
         <Link to="/checkout" className="header__link">
           <div className="header__optionBasket">
             <ShoppingBasket />
-            <span>0</span>
+            <span className="header__optionLineTwo header__basketCount">0</span>
           </div>
         </Link>
       </div>
