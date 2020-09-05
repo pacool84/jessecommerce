@@ -5,7 +5,10 @@ export const StateContext = createContext();
 
 /* Construir el Provider */
 export const StateProvider = ({ reducer, initialState, children }) => (
-  <StateContext.Provider valuer={useReducer(reducer, initialState)}>
+  <StateContext.Provider value={useReducer(reducer, initialState)}>
     {children}
   </StateContext.Provider>
 );
+
+/* Aqui es como lo usamos dentro de un componente */
+export const useStateValue = () => useContext(StateContext);
